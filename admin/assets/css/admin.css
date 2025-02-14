@@ -1,0 +1,51 @@
+/* Layout */
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+/* Sidebar */
+.list-group-item {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+}
+
+.list-group-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+/* Stats Cards */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
+/* Tables */
+.table-responsive {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}

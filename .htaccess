@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /studio/
+
+# Nếu file hoặc thư mục không tồn tại
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Chuyển hướng về index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
